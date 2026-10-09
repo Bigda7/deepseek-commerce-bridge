@@ -23,4 +23,12 @@ The public catalog changes only the assignment-source title to identify the reda
 
 Local review also checked copied and staged bytes against the existing private credential and known personal identifiers without displaying them. These were absent. This static review is not a comprehensive security audit.
 
-GitHub CI is prepared with pinned official actions, read-only repository permissions and no provider credential. It has not run on GitHub; Linux execution remains pending. No remote repository, push, GitHub Release, deployment, new live model evaluation, purchase or enrollment was performed during this preparation. Historical model evaluations are summarized separately in [EVALUATION.md](EVALUATION.md).
+At the end of local preparation, GitHub CI and Linux execution were still pending. No remote repository, push, GitHub Release, deployment, new live model evaluation, purchase or enrollment was performed during that preparation. Historical model evaluations are summarized separately in [EVALUATION.md](EVALUATION.md).
+
+## GitHub publication and CI
+
+The reviewed files were subsequently published on October 9, 2026 to [Bigda7/deepseek-commerce-bridge](https://github.com/Bigda7/deepseek-commerce-bridge), a public repository with main as its default branch. The initial commit is 8665191d2204cb8f515cedc577b1a204eb391230. The remote Git tree matched all 98 reviewed local files, and the author used a GitHub noreply address.
+
+[The initial GitHub Actions run](https://github.com/Bigda7/deepseek-commerce-bridge/actions/runs/37935056013) completed successfully on the hosted Ubuntu runner: locked dependency installation, public-file check, lint, formatting, type checking, 236 offline tests in 14 files and production build all passed. The workflow used pinned official actions and read-only repository permissions, with live generation disabled and no provider credential configured.
+
+This publishes source code only. No GitHub Release, hosted application, new live model evaluation, payment or enrollment was created. The CI badge in README links to subsequent runs; this dated record describes the initial tested code revision.

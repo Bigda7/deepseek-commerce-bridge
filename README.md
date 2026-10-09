@@ -1,5 +1,7 @@
 # DeepSeek Commerce Bridge
 
+[![CI](https://github.com/Bigda7/deepseek-commerce-bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/Bigda7/deepseek-commerce-bridge/actions/workflows/ci.yml)
+
 A local commerce prototype that connects a versioned product catalog to DeepSeek through validated tools. It separates what the assistant can explain from what the application can verify or authorize.
 
 The example is the Victory Skating / VSA annual online ballet club. Product observations are dated October 6, 2026; they are sample evidence, not a current commercial offer. This project is independent of the example business and does not modify ordinary DeepSeek.
