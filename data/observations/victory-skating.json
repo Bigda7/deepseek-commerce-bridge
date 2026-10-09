@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-10-07.1",
+  "updatedOn": "2026-10-07",
+  "businesses": [
+    {
+      "id": "victory-skating",
+      "name": "Victory Skating",
+      "contextualAliases": ["Victory Skating", "VSA"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "assignment",
+      "title": "Product scope notes (redacted summary)",
+      "kind": "assignment",
+      "location": "docs/sources/victoria-assignment.txt",
+      "observedOn": "2026-10-06",
+      "observedAt": null,
+      "approval": null
+    },
+    {
+      "id": "landing-browser",
+      "title": "Annual ballet program page, manual browser observation",
+      "kind": "website_observation",
+      "location": "https://victoryskating.com/balletgroupprogram",
+      "observedOn": "2026-10-06",
+      "observedAt": null,
+      "approval": null
+    },
+    {
+      "id": "checkout-browser",
+      "title": "Annual ballet checkout, USD selected, no purchase",
+      "kind": "checkout_observation",
+      "location": "https://buy.stripe.com/fZudR90Q3cxm69k8sTdMM2n",
+      "observedOn": "2026-10-06",
+      "observedAt": "2026-10-06T21:56:07.124Z",
+      "approval": null
+    }
+  ],
+  "products": [
+    {
+      "id": "vsa-annual-online-ballet",
+      "businessId": "victory-skating",
+      "kind": "annual-online-group-ballet",
+      "landingUrl": "https://victoryskating.com/balletgroupprogram",
+      "facts": {
+        "name": {
+          "value": "Victory Skating / VSA 1-Year Online Ballet Club",
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "description": {
+          "value": "An ongoing online group ballet program with a one-year enrollment option and 48 live Saturday classes with Coach Emilia.",
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "delivery": {
+          "value": "online",
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "format": {
+          "value": "group",
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "programModel": {
+          "value": "ongoing",
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "audience": {
+          "value": ["beginner", "recreational", "advanced", "professional"],
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Open to all experience levels; not restricted to figure skaters."
+        },
+        "coach": {
+          "value": "Coach Emilia",
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "entitlementYears": {
+          "value": 1,
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "includedClasses": {
+          "value": 48,
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "sessionDurationMinutes": {
+          "value": 60,
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "requirements": {
+          "value": [
+            "Space to move",
+            "Suitable shoes or socks",
+            "A chair or barre",
+            "A mat",
+            "Internet access"
+          ],
+          "status": "observed",
+          "sourceIds": ["landing-browser"],
+          "notes": "Equipment observed on the annual program page. No additional age or medical requirements inferred."
+        },
+        "price": {
+          "value": {
+            "amountMinor": 17900,
+            "currency": "USD"
+          },
+          "status": "observed",
+          "sourceIds": ["checkout-browser"],
+          "notes": "USD selected in the checkout on 2026-10-06. This is an observation, not business-approved pricing or a live price guarantee."
+        },
+        "billing": {
+          "value": "annual_recurring",
+          "status": "observed",
+          "sourceIds": ["checkout-browser"],
+          "notes": "The checkout described annual recurring billing until cancellation. Not a one-time purchase."
+        },
+        "commercialConsistency": {
+          "value": "unresolved",
+          "status": "observed",
+          "sourceIds": ["landing-browser", "checkout-browser"],
+          "notes": "The per-class marketing has not been reconciled with the annual checkout total. The crossed-out $499 is not a current payable price."
+        },
+        "additionalCharges": {
+          "value": null,
+          "status": "unknown",
+          "sourceIds": [],
+          "notes": "Taxes and mandatory additional charges have not been established."
+        },
+        "cancellationPolicy": {
+          "value": "Cancellation at least 48 hours before the next payment through subscriptions in email.",
+          "status": "observed",
+          "sourceIds": ["checkout-browser"],
+          "notes": "Manual checkout observation only. Recheck the provider's current terms before paying."
+        },
+        "refundPolicy": {
+          "value": "Non-refundable payment terms.",
+          "status": "observed",
+          "sourceIds": ["checkout-browser"],
+          "notes": "Manual checkout observation only; no broader refund rules inferred."
+        },
+        "weekday": {
+          "value": "saturday",
+          "status": "confirmed",
+          "sourceIds": ["assignment"],
+          "notes": "Established by the assignment."
+        },
+        "advertisedTimes": {
+          "value": [
+            "11:00-12:00 PDT",
+            "14:00-15:00 EDT",
+            "19:00-20:00 UK",
+            "20:00-21:00 CEST"
+          ],
+          "status": "observed",
+          "sourceIds": ["landing-browser"],
+          "notes": "Published labels only. They do not establish a canonical IANA time zone or year-round DST behavior."
+        },
+        "localStartTime": {
+          "value": null,
+          "status": "unknown",
+          "sourceIds": [],
+          "notes": "No canonical local start time has been confirmed."
+        },
+        "timeZone": {
+          "value": null,
+          "status": "unknown",
+          "sourceIds": [],
+          "notes": "No canonical IANA time zone has been confirmed. Do not infer it from contact details or advertised offsets."
+        },
+        "dstPolicy": {
+          "value": null,
+          "status": "unknown",
+          "sourceIds": [],
+          "notes": "The region whose daylight-saving changes govern the schedule is unknown."
+        },
+        "exceptions": {
+          "value": null,
+          "status": "unknown",
+          "sourceIds": [],
+          "notes": "No confirmed calendar of breaks or exceptions is available. 48 classes does not guarantee 52 Saturday sessions."
+        },
+        "enrollment": {
+          "value": null,
+          "status": "unknown",
+          "sourceIds": [],
+          "notes": "Ongoing program status and a working checkout page do not establish current enrollment availability."
+        },
+        "accessStartRule": {
+          "value": null,
+          "status": "unknown",
+          "sourceIds": [],
+          "notes": "The trigger for starting each participant's one-year entitlement is unknown."
+        },
+        "accessEndRule": {
+          "value": null,
+          "status": "unknown",
+          "sourceIds": [],
+          "notes": "The expiry rule is unknown. Do not assume 365 days, 48 consecutive Saturdays, or a start on payment."
+        },
+        "checkoutUrl": {
+          "value": "https://buy.stripe.com/fZudR90Q3cxm69k8sTdMM2n",
+          "status": "observed",
+          "sourceIds": ["landing-browser", "checkout-browser"],
+          "notes": "Official linked destination loaded for the annual ballet product. No transaction was submitted; enrollment and access rules remain unknown."
+        },
+        "checkoutTitle": {
+          "value": "1-Year Ballet Club (weekly classes)",
+          "status": "observed",
+          "sourceIds": ["checkout-browser"],
+          "notes": "Title displayed in the checkout during the recorded observation."
+        }
+      }
+    }
+  ],
+  "observations": [
+    {
+      "id": "crossed-out-499",
+      "productId": "vsa-annual-online-ballet",
+      "sourceIds": ["landing-browser"],
+      "kind": "crossed_out_price",
+      "text": "The landing page displayed $499 with a line-through decoration. Do not treat it as a current payable annual price; the symbol alone does not establish an ISO currency."
+    },
+    {
+      "id": "per-class-marketing",
+      "productId": "vsa-annual-online-ballet",
+      "sourceIds": ["landing-browser"],
+      "kind": "per_class_marketing",
+      "text": "The landing page displayed $3/class. Do not multiply it by 48 to invent an annual total."
+    },
+    {
+      "id": "separate-monthly-private",
+      "productId": "vsa-annual-online-ballet",
+      "sourceIds": ["landing-browser"],
+      "kind": "separate_offer",
+      "text": "Monthly and private offers are separate products. Their terms must not be imported into the annual group program."
+    },
+    {
+      "id": "unreconciled-commercial-marketing",
+      "productId": "vsa-annual-online-ballet",
+      "sourceIds": ["landing-browser", "checkout-browser"],
+      "kind": "commercial_discrepancy",
+      "text": "The annual checkout observation and per-class marketing have not been reconciled. Retain both sources and disclose the uncertainty."
+    }
+  ]
+}

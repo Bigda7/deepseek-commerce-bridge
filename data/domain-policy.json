@@ -1,0 +1,12 @@
+{
+  "enrollmentMaxAgeSeconds": 900,
+  "checkoutMaxAgeSeconds": 86400,
+  "commercialMaxAgeSeconds": 86400,
+  "checkoutDestinations": [
+    {
+      "productId": "vsa-annual-online-ballet",
+      "url": "https://buy.stripe.com/fZudR90Q3cxm69k8sTdMM2n",
+      "productTitle": "1-Year Ballet Club (weekly classes)"
+    }
+  ]
+}

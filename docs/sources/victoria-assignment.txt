@@ -1,0 +1,9 @@
+Public summary of the exercise scope
+
+This file summarizes requirements originally supplied on October 6, 2026. It is not the original correspondence and does not constitute new business approval or a current availability lookup.
+
+The sample product is the Victory Skating / VSA 1-Year Online Ballet Club: an ongoing online group program, one-year enrollment option, 48 live Saturday classes of 60 minutes with Coach Emilia, intended for beginners through professionals, including non-skaters.
+
+The exercise requires keeping enrollment availability, recurring sessions and one-year access separate. An earlier advertised launch date must not close the ongoing program. Missing prices, terms, availability, time zones, breaks and access rules must remain explicit rather than inferred. Product evaluations use DeepSeek only.
+
+The public catalog keeps the original source dates and field values. Its assignment source title identifies this redacted summary. Observed website/checkout fields retain their own separate provenance, and approved commercial overrides remain empty.
